@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/business"
+    android:backgroundTint="#30FFFFFF"
+    android:backgroundTintMode="src_over"
     tools:context="com.example.chigrin.helloandroid.MainActivity">
 
 
@@ -12,86 +15,68 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:scaleType="centerCrop"
         android:src="@drawable/udacity"
+        android:alpha="0.6"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:autoLink="web"
+        android:background="#0D47A1"
+        android:linksClickable="true"
+        android:text="@string/udacity"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_udacity" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="3"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
 
         <!-- first string -->
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/telephone" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telephon"
-                android:textSize="@dimen/text_size" />
-
-        </LinearLayout>
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/telephone"
+            android:text="@string/telephon"
+            android:textColor="#0D47A1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
         <!-- 2nd string -->
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/www" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/www"
-                android:textSize="@dimen/text_size" />
-
-        </LinearLayout>
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/www"
+            android:text="@string/www"
+            android:textColor="#0D47A1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
         <!-- therd string -->
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/geo" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/adress"
-                android:textSize="@dimen/text_size" />
-
-        </LinearLayout>
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/geo"
+            android:text="@string/geo"
+            android:textColor="#003c8f"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
