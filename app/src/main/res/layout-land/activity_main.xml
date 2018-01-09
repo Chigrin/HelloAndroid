@@ -47,41 +47,26 @@
 
         <!-- first string -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="16dp"
+            style="@style/NewStyle"
             android:drawableStart="@drawable/telephone"
-            android:gravity="center_vertical"
             android:text="@string/telephon"
-            android:textColor="#0D47A1"
             android:textSize="@dimen/text_size"
-            android:textStyle="bold"
             android:layout_weight="1"/>
 
         <!-- 2nd string -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="16dp"
+            style="@style/NewStyle"
             android:drawableStart="@drawable/www"
-            android:gravity="center_vertical"
             android:text="@string/www"
-            android:textColor="#0D47A1"
             android:textSize="@dimen/text_size"
-            android:textStyle="bold"
             android:layout_weight="1"/>
 
         <!-- therd string -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawablePadding="16dp"
+            style="@style/NewStyle"
             android:drawableStart="@drawable/geo"
-            android:gravity="center_vertical"
             android:text="@string/geo"
-            android:textColor="#003c8f"
             android:textSize="@dimen/text_size"
-            android:textStyle="bold"
             android:layout_weight="1"/>
 
 
